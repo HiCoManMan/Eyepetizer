@@ -93,8 +93,11 @@ class AutoPlayScrollListener(private val itemPlayId: Int, private val rangeTop: 
                     if (tmpPlayer === gsyBaseVideoPlayer) return
                 }
                 runnable = PlayRunnable(gsyBaseVideoPlayer)
+                val finalRunnable = runnable
                 //降低频率
-                playHandler.postDelayed(runnable, 400)
+                if (finalRunnable != null) {
+                    playHandler.postDelayed(finalRunnable, 400)
+                }
             }
         }
     }

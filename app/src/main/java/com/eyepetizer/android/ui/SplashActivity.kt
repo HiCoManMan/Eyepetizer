@@ -39,7 +39,7 @@ import kotlinx.coroutines.*
  */
 class SplashActivity : BaseActivity() {
 
-    var _binding: ActivitySplashBinding? = null
+    var _binding: ActivitySplashBinding ?= null
 
     val binding: ActivitySplashBinding
         get() = _binding!!

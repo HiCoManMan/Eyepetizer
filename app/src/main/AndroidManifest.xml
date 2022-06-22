@@ -40,7 +40,9 @@
 
         <activity
             android:name=".ui.SplashActivity"
-            android:theme="@style/Eyepetizer.SplashActivity">
+            android:theme="@style/Eyepetizer.SplashActivity"
+            android:exported="true"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
